@@ -9,3 +9,13 @@ from .serializer import UsuarioSerializer, ProyectoSerializer, TareaSerializer
 class UsuarioViewSet(viewsets.ModelViewSet):
     serializer_class = UsuarioSerializer
     queryset = Usuario.objects.all()
+
+
+class ProyectoViewSet(viewsets.ModelViewSet):
+    serializer_class = ProyectoSerializer
+    queryset = Proyecto.objects.all()
+
+
+class TareaViewSet(viewsets.ModelViewSet):
+    serializer_class = TareaSerializer
+    queryset = Tarea.objects.all()
